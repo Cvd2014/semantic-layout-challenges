@@ -5,10 +5,32 @@
 		<title>Box Model</title>
 		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-		body{
-			background-image: url(img/code.jpg);
-			background-size: cover;
-		}
+			body{
+				background-image: url(img/code.jpg);
+				background-size: cover;
+			}
+			nav ul{
+				list-style: none;
+				text-align: center; 
+			}	
+
+			nav ul li{
+				font-size: 30px;
+				border-bottom: 1px solid #444;
+				padding: 10px 5px;
+				background-color: #1D2026;
+			}
+
+			nav ul li:hover{
+				background-color: #555;
+				transition: all .3s ease;
+			}
+			nav ul li a{
+				display:block;
+				text-decoration: none;
+				font-family: Roboto;
+				color:#c9f2ff;
+			}
 
 			#container
 			{
@@ -82,7 +104,7 @@
     /* min-width for desktop */
   			} 
 
-  			@media screen and(max-width: 1000px){
+  			@media screen and(min-width:1000px){
   				p{
   					color:white;
   				}
@@ -94,10 +116,20 @@
 		</style>
 	</head>
 	<body>
-		<div id="container">
+		<div id="coiner">
 
 			<div id="header" class="box"> <h1>Header</h1>
+			
 			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
 			<div class="box sidebar">
 				<h2>Sidebar</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed dolor esse cumque unde, explicabo totam, in sequi iste recusandae ipsa laudantium, neque excepturi molestias modi velit animi asperiores suscipit? Voluptas.</p>

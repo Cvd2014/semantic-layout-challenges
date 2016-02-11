@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+
+			#container
+			{
+				margin-right:auto; /*center container with margins left & right set to auto*/
+				margin-left:auto;
+				width:960px;	/*to center an element it must have a fixed width*/
+				border-radius: 10px;
+				padding: 10px;
+				padding-top: 155px;
+				font-size: 0; /* font-size:0 removes problem spaceing issue for inline-block*/
+
+			}
+			.box{
+				position: relative;
+				width: 100%;
+				background-color: #81BBC9;
+				border-radius: 10px;
+				font-family: Roboto;
+				font-size: 20px;  /* important to declare font-size here, otherwise will be 0*/
+				text-align: center;
+				padding: 30px 0;
+				margin-bottom: 10px;
+			}
+			
+			.sidebar{
+				box-sizing:border-box;
+				display: inline-block;
+				width: 475px;
+				margin-right: 5px;
+				padding-right: 40px;
+				padding-left: 40px;
+				
+			}
+			
+			.content{
+				box-sizing:border-box;
+				display: inline-block;
+				width: 475px;
+				margin-left: 5px;
+				padding-right: 40px;
+				padding-left: 40px;
+				position:relative;
+				
+			}
+
+			p{text-align: left;
+				margin-bottom: 50px;
+			}
+
+			#linkToSide{
+				position:absolute;
+				bottom:0px;
+				left:-80px;
+			}
+			#linkToTop{
+				position: absolute;
+				bottom: 0px;
+				right: -80px
+			}
+			@media (min-width: 400px){ 
+    		p {
+     		 	font-size: 40px;
+   			 } 
+   			 .box {
+   				 text-align: left; background-color:#eee; border-color: white;
+    		}
+    		/* min-width for desktop */
+  			} 
+
+
+
+
+			
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+
+			<div id="header" class="box"> <h1>Header</h1>
+			</div><div class="box sidebar"><h2>Sidebar</h2>
+			<p>alldewefowr ofdoiargioqejg oidhgajrgiahegpae uegfoihgprig eiogqhprgh fhoiwehfi egfkhqrgjq egfohweghiqp uehfqwrgpjqrpg iefiewgpop</p>
+			<p>ekhfqrhgjqr ewhf pewgopwrewopgfhpo poewjgopf	wregpowj	rp pejfpo	weg poewjgopfwejfpojwepofh	wep gheohfiorwhgo ehgwfiowqoifr</p>
+			<img id="linkToSide"src="C:\Users\Ciaran Darcy\Documents\Code_Institute\Projects\positioning-challenges\3-absolute-positioning\img\arrow.png">
+			
+			</div>
+			<div class="box content"><h2>Content</h2>
+			<p>lkehfwaf geofhewif ihioefhpwe fhihef phwfp iwehfioewhfoi ihewfo ewhoif hefoihewof hweofgiuefh weofoiweoiho ohewfijg w gfewugf o hfeow </p>
+			<p> ihefiow he owfho  qegrfioewohfi ehfqoif quioe foiq eihfo q oiehqfoifho oiqhefoifho oeiqfhoif hoiefqho qooiqehf foif oqehf hfeoiqh </p>
+			<img id="linkToTop"src="C:\Users\Ciaran Darcy\Documents\Code_Institute\Projects\positioning-challenges\3-absolute-positioning\img\arrow.png">
+			</div>
+			<div class="box sidebar"><h2>Sidebar</h2>
+			<p>alldewefowr ofdoiargioqejg oidhgajrgiahegpae uegfoihgprig eiogqhprgh fhoiwehfi egfkhqrgjq egfohweghiqp uehfqwrgpjqrpg iefiewgpop</p>
+			<p>ekhfqrhgjqr ewhf pewgopwrewopgfhpo poewjgopf	wregpowj	rp pejfpo	weg poewjgopfwejfpojwepofh	wep gheohfiorwhgo ehgwfiowqoifr</p>			
+			</div>
+			<div class="box content"><h2>Content</h2>
+			<p>lkehfwaf geofhewif ihioefhpwe fhihef phwfp iwehfioewhfoi ihewfo ewhoif hefoihewof hweofgiuefh weofoiweoiho ohewfijg w gfewugf o hfeow </p>
+			<p> ihefiow he owfho  qegrfioewohfi ehfqoif quioe foiq eihfo q oiehqfoifho oiqhefoifho oeiqfhoif hoiefqho qooiqehf foif oqehf hfeoiqh </p>
+			
+			</div><div id="footer" class="box"><h2>Footer</h2>
+			</div>
+
+		</div>
+	</body>
+</html>
